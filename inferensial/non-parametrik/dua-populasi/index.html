@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Tinjauan - METODE STATISTIKA</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Tinjauan";
+    var mkdocs_page_input_path = "inferensial\\non-parametrik\\dua-populasi\\index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="icon icon-home"> METODE STATISTIKA</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../index.html">Beranda</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../about.html">Tentang</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Analisis Deskriptif</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../deskriptif/index.html">Tinjauan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Visualisasi Data</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/tabel.html">Tabel</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/barchart.html">Diagram Batang</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/piechart.html">Diagram Lingkaran</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/linechart.html">Diagram Garis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/mapchart.html">Diagram Peta</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/visualisasi/pictogram.html">Diagram Gambar</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Eksplorasi Data</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/lokasi.html">Ukuran Lokasi</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/dispersi.html">Ukuran Dispersi</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/frekuensi.html">Distribusi Frekuensi</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/kontingensi.html">Tabel Kontingensi</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/summary.html">Summary Number</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/histogram.html">Histogram</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/boxplot.html">Boxplot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/skewness-kurtosis.html">Skewness & Kurtosis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../deskriptif/eksplorasi/outlier.html">Outlier</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Analisis Inferensial</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../../index.html">Tinjauan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Parametrik</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../parametrik/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Estimasi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../parametrik/estimasi/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Satu Populasi</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/estimasi/satu-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Dua Populasi</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/estimasi/dua-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Uji Hipotesis</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../parametrik/hipotesis/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Satu Populasi</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/hipotesis/satu-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Dua Populasi</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/hipotesis/dua-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">>2 Populasi</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/hipotesis/k-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="#">Normalitas</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../../parametrik/hipotesis/normalitas/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Non Parametrik</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Satu Populasi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../satu-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Dua Populasi</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">>2 Populasi</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../k-populasi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Hubungan</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../hubungan/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Analisis Regresi</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../regresi/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Analisis Data Kategorik</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kategorik/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Analisis Timeseries</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../timeseries/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Metode Sampling</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../sampling/index.html">Tinjauan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Non Probability</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/non-probability/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Probability</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/index.html">Tinjauan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/simple.html">SRS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/sistematik.html">Sistematik</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/stratified.html">Stratified</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/pps.html">PPS Sampling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/cluster.html">Cluster Sampling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/multistage.html">Multistage Sampling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../sampling/probability/multistage.html">Estimator</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Penyusunan Kuesioner</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../kuesioner/index.html">Tinjauan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../kuesioner/validitas.html">Uji Validitas</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../kuesioner/reliabilitas.html">Uji Reliabilitas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Statistika Matematika</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/index.html">Tinjauan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/peluang.html">Teori Peluang</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Random Variabel</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../statmat/random-variable/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Sample Distribution</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../statmat/sample-dist/index.html">Tinjauan</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/point-est.html">Pendugaan Titik</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/interval-est.html">Pendugaan Selang</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/hipotesis.html">Pengujian Hipotesis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../statmat/kontingensi.html">Tabel Kontingensi</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">METODE STATISTIKA</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Dua Populasi &raquo;</li>
+        
+      
+        
+          <li>Non Parametrik &raquo;</li>
+        
+      
+        
+          <li>Analisis Inferensial &raquo;</li>
+        
+      
+    
+    <li>Tinjauan</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/statistikaa/statistikaa/edit/master/docs/inferensial/non-parametrik/dua-populasi/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../k-populasi/index.html" class="btn btn-neutral float-right" title="Tinjauan">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../satu-populasi/index.html" class="btn btn-neutral" title="Tinjauan"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/statistikaa/statistikaa/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../satu-populasi/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../k-populasi/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
